@@ -85,13 +85,6 @@ class HomeController: BaseViewController, HomePresenterProtocol, CollectionProto
     // MARK: - UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let item = products?[indexPath.row]
-        if let item = item {
-            self.itemClicked?(item)
-            let vc = ProductDetails()
-            vc.apiData = item
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
     }
     
     // MARK: - UICollectionViewDelegateFlowLayout
