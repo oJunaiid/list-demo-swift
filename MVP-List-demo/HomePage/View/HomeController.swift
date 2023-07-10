@@ -33,7 +33,7 @@ class HomeController: BaseViewController, HomePresenterProtocol, CollectionProto
         super.viewDidLoad()
         navigationItem.title = "Product List"
         setUpCollectionView()
-        presenter = HomePresenter(delegate: self)
+        presenter = HomePresenter(homeDelegate: self)
         presenter?.fetch()
     }
     

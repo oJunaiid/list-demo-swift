@@ -21,5 +21,12 @@ class BasePresenter {
         alert.addAction(action)
     }
     
+    func showLoading() {
+        LoadingIndicatorView.show()
+    }
+    
+    func hideLoading() {
+        LoadingIndicatorView.hide()
+    }
 }
  
